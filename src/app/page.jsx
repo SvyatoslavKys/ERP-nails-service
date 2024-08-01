@@ -1,15 +1,13 @@
-
-
-
+import Header from "@/libs/components/header/header";
 
 var Home = async () => {
 
-
   return (
     <>
-    <div>
-      sfdgdf
-    </div>
+    <Header />
+
+
+
     </>
   );
 };
