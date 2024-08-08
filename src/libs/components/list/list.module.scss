@@ -1,0 +1,163 @@
+.section{
+    // background-image: url(src/libs/pages/BG.jpg);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(270deg,#88bdf2 43%,rgba(99,71,137,0));
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.button {
+    width: 50px;
+    height: 35.5px;
+    color:white;
+    background:#00b2f2;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 20px 0 5px;
+    padding: 0 4px 0 4px;
+    cursor: pointer;
+   
+}
+@media (hover :hover) {
+    .button:hover {
+        background: coral;
+    }
+}
+@media (hover: none) {
+    .button:active {
+        background: coral;
+    }
+}
+
+.datalist {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width:  100%;
+    padding: 10px;
+    // min-width: 90%;
+    // margin: 10px 10px 0 5px;
+
+
+ }
+ .dataitem {
+    width: 100%;
+    height: 100%;
+    // min-width: 90%;
+    background:#00b2f2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+ }
+ .name {
+    font-size: 20px;
+    color: black;
+ }
+ .phone{
+    color:brown;
+    cursor: pointer;
+ }
+ .telname{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .avatarr{
+    width: 35px;
+    height: 35px;
+
+ }
+//  ---------------modal------------
+.beckdrop{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background-color: #15171f88;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.modal{
+
+    width: 425px;
+    height: 757px;
+    background-color: #9DA4BD;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate( -50% , -50% );
+    transition: 300ms;
+    border-radius: 4px;
+    padding: 35px;
+    position: relative;
+   
+    
+}
+.modalclose{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #FF6C00;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    background-color: none;
+    transition: 300ms;
+    
+}
+
+@media (hover :hover) {
+    .modalclose:hover {
+        background: coral;
+    }
+}
+@media (hover: none) {
+    .modalclose:active {
+        background: coral;
+    }
+}
+
+.btnsave{
+    width: 50px;
+    height: 35.5px;
+    color:white;
+    background:#00b2f2;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 20px 0 5px;
+    padding: 0 4px 0 4px;
+    cursor: pointer;
+}
+@media (hover :hover) {
+    .btnsave:hover {
+        background: coral;
+    }
+}
+@media (hover: none) {
+    .btnsave:active {
+        background: coral;
+    }
+}
+.input{
+    padding: 10px;
+    background:#00b2f2;
+    color: alpha($color: #000000);
+    max-width: 425px;
+    min-width: 90%;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 5px 5px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}

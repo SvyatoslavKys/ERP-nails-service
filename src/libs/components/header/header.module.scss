@@ -13,21 +13,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 20px;
 }
 
 .search {
     
-        padding: 10px;
-        background:#00b2f2;
-        color: white;
-        max-width: 425px;
-        min-width: 90%;
-        border: none;
-        border-radius: 5px;
-        margin: 0 10px 0 5px;
-    
-    
-    
+    padding: 10px;
+    background:#00b2f2;
+    color: alpha($color: #000000);
+    max-width: 425px;
+    min-width: 90%;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 0 5px;
 }
+// :-ms-input-placeholder {
+//     color: #000000;
+// }
+.avatarr{
+    width: 35px;
+    height: 35px;
 
+ }

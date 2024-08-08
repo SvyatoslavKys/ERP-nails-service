@@ -1,13 +1,11 @@
-import Header from "@/libs/components/header/header";
+import List from "@/libs/components/list/list";
+
 
 var Home = async () => {
 
   return (
     <>
-    <Header />
-
-
-
+   <List />
     </>
   );
 };
