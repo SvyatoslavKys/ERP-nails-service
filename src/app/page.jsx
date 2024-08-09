@@ -1,11 +1,9 @@
 import List from "@/libs/components/list/list";
 
-
 var Home = async () => {
-
   return (
     <>
-   <List />
+      <List />
     </>
   );
 };
