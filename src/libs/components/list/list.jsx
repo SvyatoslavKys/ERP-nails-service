@@ -1,17 +1,24 @@
-// import { Bentham } from "next/font/google";
-import  styles  from "./list.module.scss";
+"use client"
+import { useState } from "react";
+import styles from "./list.module.scss";
 import Image from "next/image";
 import Avatar from '@/libs/pages/components/BG.jpg';
-// import Image from "./pages/BG.jpg";
 
-function List (){
+import Modal from "@/libs/components/modal/modalAdd/modal";
+import ModalCards from "../modal/modalCard/modalCards";
+
+export default function List() {
+    const [isOpenModalAdd, setIsOpenModalAdd] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
+        <>
         <section className={styles.section}>
             <div className={styles.container}>
-                <button className={styles.button}>Add+</button>
+                <button className={styles.button} onClick={()=> setIsOpenModalAdd(true)}>Add+</button>
                 <ul className={styles.datalist}>
-                    <li className={styles.dataitem}>
-                    <div className={styles.avatarr}>
+                    <li className={styles.dataitem} >
+                    <div className={styles.avatarr} onClick={()=> setIsOpen(true)}>
                         <Image
                             src={Avatar}
                             alt="avatar"
@@ -27,26 +34,14 @@ function List (){
                     </li>
                 </ul>
             </div>
-            <div className={styles.beckdrop}>
-     <div className={styles.modal}>
-        <button type="button" className={styles.modalclose} data-modal-close>X</button>
-        <p className={styles.modalname}>ADD Contact</p>
-        <form className={styles.form} action="">
-            <input className={styles.input} type="text" size="30" placeholder='Name' />
-            <input className={styles.input} type="text" size="30" placeholder='Firstname' />
-            <input className={styles.input} type="file" placeholder='Photo'/>
-            <input className={styles.input} type="number" placeholder='Phone number' />
-            <input className={styles.input} type="email" placeholder='Email' />
-            <input className={styles.input} type="datetime-local"  />
-           <label className={styles.input} ><input  type="checkbox"/>check</label>
-           <label className={styles.input} ><input  type="checkbox"/>check</label>
-        </form>
-        <button type="submit" className={styles.btnsave}>Save</button>
-     </div>
-   </div>
-   <script >
-   </script>
         </section>
-     )
+            
+        {isOpenModalAdd &&
+            < Modal setIsOpenModalAdd={setIsOpenModalAdd} />
+        }
+        {isOpen &&
+            <ModalCards setIsOpen={setIsOpen} />
+        }
+    </>
+    )
 }
-export default List;

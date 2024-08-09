@@ -1,0 +1,17 @@
+.container {
+  position: absolute;
+  top: 0;
+  width: 100svw;
+  height: 100svh;
+  background-color: red;
+  z-index: 4;
+}
+
+.closed {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
