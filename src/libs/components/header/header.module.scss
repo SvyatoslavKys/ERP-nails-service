@@ -44,4 +44,18 @@
     overflow: hidden;
     width: 35px;
     height: 35px;
+    transition: 0.5s;
+    transform: rotate( 0deg);
+    cursor: pointer;
+}
+
+ @media (hover :hover) {
+    .avatarr:hover {
+        transform: rotate( 360deg);
+    }
+}
+@media (hover: none) {
+    .avatarr:active {
+        transform: rotate(y 360deg);
+    }
 }

@@ -14,8 +14,8 @@ export default function ModalAdd({ setIsOpenModalAdd }) {
               <input className={styles.input} type="number" placeholder='Phone number' />
               <input className={styles.input} type="email" placeholder='Email' />
               <input className={styles.input} type="datetime-local"  />
-            <label className={styles.input} ><input  type="checkbox"/>check</label>
-            <label className={styles.input} ><input  type="checkbox"/>check</label>
+            <label className={styles.inputcheck} ><input  type="checkbox"/>check<input  type="checkbox"/>check</label>
+            {/* <label className={styles.input} ><input  type="checkbox"/>check</label> */}
           </form>
           <button type="submit" className={styles.btnsave} >Save</button>
       </div>

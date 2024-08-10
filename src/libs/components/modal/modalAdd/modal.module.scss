@@ -21,6 +21,11 @@
   padding: 35px;
   position: relative;
 }
+.modalname{
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
 
 .modalclose {
   position: absolute;
@@ -75,7 +80,7 @@
 .input {
   padding: 10px;
   background: #00b2f2;
-  color: alpha($color: #000000);
+  color: black;
   max-width: 425px;
   min-width: 90%;
   border: none;
@@ -83,9 +88,50 @@
   border-radius: 5px;
   margin: 0 10px 5px 5px;
 }
+.inputcheck{
+  padding: 10px;
+  background: #00b2f2;
+  color: black;
+  max-width: 425px;
+  min-width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 10px 5px 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
 
 .form {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
+}
+
+@media (hover :hover) {
+  .inputcheck:hover {
+    background: coral;
+    color: azure;
+  }
+}
+
+@media (hover: none) {
+  .inputcheck:active {
+    background: coral;
+    color: azure;
+  }
+}
+@media (hover :hover) {
+  .input:hover {
+    background: coral;
+    color: azure;
+  }
+}
+
+@media (hover: none) {
+  .input:active {
+    background: coral;
+    color: azure;
+  }
 }

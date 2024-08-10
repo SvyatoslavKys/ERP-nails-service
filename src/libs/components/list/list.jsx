@@ -28,6 +28,7 @@ export default function List() {
                         </div>
                         <div className={styles.telname}>
                         <p className={styles.name}>Name</p>
+                        <p className={styles.name}>Surname</p>
                         <a className={styles.phone} href="tel:+380441111111">+38 044 111 11 11</a>
                         </div>
                         <time datetime="2024-08-01">1 Аагуста 2024</time>

@@ -56,12 +56,22 @@
  }
  .name {
     font-size: 20px;
-    color: black;
+    color: white;
  }
  .phone{
-    color:brown;
+    color: white;
     cursor: pointer;
  }
+ @media (hover :hover) {
+    .phone:hover {
+        color: black;
+    }
+}
+@media (hover: none) {
+    .phone:active {
+        color: black;
+    }
+}
  .telname{
     display: flex;
     flex-direction: column;
@@ -73,4 +83,16 @@
     overflow: hidden;
     width: 70px;
     height: 70px;
+    transition: 0.5s;
+    transform: rotate( 0deg);
  }
+ @media (hover :hover) {
+    .avatarr:hover {
+        transform: rotate( 360deg);
+    }
+}
+@media (hover: none) {
+    .avatarr:active {
+        transform: rotate(y 360deg);
+    }
+}

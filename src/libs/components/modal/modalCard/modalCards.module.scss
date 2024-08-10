@@ -1,17 +1,159 @@
-.container {
+.beckdrop {
   position: absolute;
   top: 0;
-  width: 100svw;
-  height: 100svh;
-  background-color: red;
-  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  background-color: #15171f88;
+  transition: 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+
 }
 
-.closed {
+.modal {
+  width: 425px;
+  height: 100vh;
+  background-color: #9DA4BD;
+  transition: 300ms;
+  border-radius: 4px;
+  padding: 35px;
+  position: relative;
+}
+.modalname{
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.avatarr{
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s;
+  transform: rotate( 0deg);
+  margin-bottom: 5px;
+}
+.modalclose {
   position: absolute;
-  right: 24px;
-  top: 24px;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #FF6C00;
   cursor: pointer;
+  right: 10px;
+  top: 10px;
+  background-color: none;
+  transition: 300ms;
+
+}
+
+@media (hover :hover) {
+  .modalclose:hover {
+    background: coral;
+  }
+}
+
+@media (hover: none) {
+  .modalclose:active {
+    background: coral;
+  }
+}
+
+.btnsave {
+  width: 50px;
+  height: 35.5px;
+  color: white;
+  background: #00b2f2;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 20px 0 5px;
+  padding: 0 4px 0 4px;
+  cursor: pointer;
+}
+
+@media (hover :hover) {
+  .btnsave:hover {
+    background: coral;
+  }
+}
+
+@media (hover: none) {
+  .btnsave:active {
+    background: coral;
+  }
+}
+
+.input {
+  padding: 10px;
+  background: #00b2f2;
+  color: black;
+  max-width: 425px;
+  min-width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 10px 5px 5px;
+}
+.inputdescript{
+  padding: 10px;
+  background: #00b2f2;
+  color: black;
+  max-width: 425px;
+  min-width: 90%;
+  height: 90px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 10px 5px 5px;
+}
+.inputcheck{
+  padding: 10px;
+  background: #00b2f2;
+  color: black;
+  max-width: 425px;
+  min-width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 10px 5px 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+@media (hover :hover) {
+  .inputcheck:hover {
+    background: coral;
+    color: azure;
+  }
+}
+
+@media (hover: none) {
+  .inputcheck:active {
+    background: coral;
+    color: azure;
+  }
+}
+@media (hover :hover) {
+  .input:hover {
+    background: coral;
+    color: azure;
+  }
+}
+
+@media (hover: none) {
+  .input:active {
+    background: coral;
+    color: azure;
+  }
 }
