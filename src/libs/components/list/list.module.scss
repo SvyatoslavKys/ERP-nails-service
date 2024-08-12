@@ -83,7 +83,7 @@
     overflow: hidden;
     width: 70px;
     height: 70px;
-    transition: 0.5s;
+    transition: 0.5s cubic-bezier(1,.03,0,1);
     transform: rotate( 0deg);
  }
  @media (hover :hover) {

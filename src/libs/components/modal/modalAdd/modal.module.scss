@@ -21,11 +21,7 @@
   padding: 35px;
   position: relative;
 }
-.modalname{
-  font-size: 24px;
-  color: black;
-  margin-bottom: 10px;
-}
+
 
 .modalclose {
   position: absolute;
@@ -134,4 +130,18 @@
     background: coral;
     color: azure;
   }
+}
+.photo {
+  position: relative;
+  width: 340px;
+  height: 254px;
+  margin: 10px 20px 0 5px;
+  cursor: pointer;
+}
+
+.img{
+  object-fit: cover;
+  width: 340px;
+  height: 254px;
+
 }

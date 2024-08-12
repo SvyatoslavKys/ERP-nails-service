@@ -9,8 +9,8 @@ export default function ModalCards({ setIsOpen }) {
         <div className={styles.beckdrop}>
         <div className={styles.modal}>
             <button type="button" className={styles.modalclose}onClick={() => setIsOpen(false)}>X</button>
-            <p className={styles.modalname}>Client card</p>
             <form className={styles.form} action="">
+              <div className={styles.nameblock}>
             <div className={styles.avatarr} onClick={()=> setIsOpen(true)}>
                         <Image
                             src={Avatar}
@@ -19,19 +19,28 @@ export default function ModalCards({ setIsOpen }) {
                             loading="eager"
                         />
                         </div>
-                <texteria className={styles.input} type="text" size="30">
+                        <div className={styles.surnameblok}>
+                <texteria className={styles.nameclass}  type="text" size="30">
                   Name
                 </texteria>
-                <textaria className={styles.input} type="text" size="30">Surname</textaria>
+                <textaria  className={styles.nameclass} type="text" size="30">
+                  Surname</textaria>
+                  </div>
+                </div>
                 <textaria className={styles.input} type="text" size="30">Phone number</textaria>
                 <textaria className={styles.input} type="text" size="30">Email</textaria>
-                <time className={styles.input} datetime="2024-08-01">1 Аагуста 2024</time>
-              <label className={styles.inputcheck} ><input  type="checkbox"/>check<input  type="checkbox"/>check</label>
               {/* <label className={styles.input} ><input  type="checkbox"/>check</label> */}
               <textaria className={styles.inputdescript} type="text" size="999">Description</textaria>
               <textaria className={styles.input} type="text" size="30">Price</textaria>
+              <div className={styles.inputcheck}>
+              <input  type="checkbox"/>check
+              <input  type="checkbox"/>check
+              </div>
             </form>
-            <button type="submit" className={styles.btnsave} >Save</button>
+            <div className={styles.blokbottom}>
+            <time datetime="2024-08-01">1 Аагуста 2024</time>
+            <button type="submit" className={styles.btnsave} >Edit</button>
+            </div>
         </div>
       </div>
   )
