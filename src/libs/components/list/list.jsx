@@ -24,6 +24,7 @@ export default function List() {
                             alt="avatar"
                             priority={true}
                             loading="eager"
+                            className={styles.img}
                         />
                         </div>
                         <div className={styles.telname}>
